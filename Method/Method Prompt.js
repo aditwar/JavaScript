@@ -1,7 +1,6 @@
-let pesanInput2 = prompt('Tuhan Engkau sungguh baik'); // Akan menampilkan Alert 'Tuhan Engkau...' dan input tulisan
-console.log(pesanInput2);
+// PROMPT selalu membuat USER mengINPUT string atau text
+let pesanInput = prompt('Silakan masukkan angka...');
+console.log(typeof pesanInput); // output -> input USER berupa string atau tulisan kemudian tanda ok
 
-let name = prompt('Silahkan input nama');
-console.log(name);
 
 // Alert dan Prompt akan mucul dahulu sebelum yg lain dan ini harus di close dahulu
