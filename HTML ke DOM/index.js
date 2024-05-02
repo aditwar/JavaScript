@@ -14,4 +14,14 @@ daftar.appendChild(newElement); // Ini untuk menambahkan elemen baru ke bagian t
 
 
 
-// Itu merupakan cara menambahkan ke bagian terakhir list, kalau bagian ter awal ini dia
+/* Itu merupakan cara menambahkan ke bagian terakhir list, kalau bagian ter awal ini dia
+CARA SAMA seperti bagian atas tapi appendChild DIGANTI DENGAN insertBefore
+*/
+const elementAwal = document.createElement('li');
+undefined
+elementAwal.innerText = 'Hidupkan kompor.';
+'Hidupkan kompor.'
+const itemAwal = document.getElementById('awal');
+undefined
+daftar.insertBefore(elementAwal, itemAwal);
+OUTPUT
