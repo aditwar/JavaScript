@@ -26,4 +26,4 @@ playButtonElement.setAttribute('type', 'submit'); // Tombol ini sudah berubah fu
 
 
 // Pada setAttribute diatas seharusnya dituliskan
-gambar.setAttribute('width', '300'); // TETAPI KARENA DI JAVASCRIPT sudah ada Automatic Type sehingga dapat mengenenali itu angka
+gambar.setAttribute('width', '300'); // TETAPI KARENA DI JAVASCRIPT sudah ada Automatic Type sehingga dapat mengenenali itu angka asdfasdf
