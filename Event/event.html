@@ -26,7 +26,35 @@
 </div>
  
 <script>
-  // Kode JavaScript kita
+  // ini merupakan elemen DOM yang menyingkirkan atribut hidden sehingga setelah menekan tombol ok pada alert akan memunculkan kontennya
+  function welcome(){
+    alert('Sim salabim muncullah elemen-elemen HTML!');
+    const contents = document.querySelector('.contents');
+    contents.removeAttribute('hidden');
+  }
+  // Event HANDLER sebagai event onload dari elemen body
+  document.body.onload = welcome;
+
+  // Ini memerintahkan proses increment (penjumlahan) pada atribut id count
+  function increment() {
+    document.getElementById('count').innerText++;
+
+    /* Terjadi jika (if function)pada atribut id count 7 maka
+    membuat hiddenMessage pada dokument (DOM) elemen h4 berupa innerText 'Selamat...'
+    membuat image (img) dengan atribut dari halaman link website
+    */
+    if (document.getElementById('count').innerText == 7){
+      const hiddenMessage = document.createElement('h4');
+      hiddenMessage.innerText = 'Selamat! Anda menemukan hadiah tersebunyi ...';
+      const image = document.createElement('img');
+      image.setAttribute('src', 'https://i.ibb.co/0V49VRZ/catto.jpg');
+      const contents = document.querySelector('.contents');
+      contents.appendChild(hiddenMessage).appendChild(image);
+    }
+  }
+
+  // Ini memerintahkan penambahan saat menekan tombol pada atribut id incrementButton
+  document.getElementById('incrementButton').onclick = increment;
 </script>
 </body>
 </html>
