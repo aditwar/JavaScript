@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event World</title>
+        <style>
+            .button {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid black;
+                padding: 15px;
+            }
+            .button {
+                margin: 8px;
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="button" align="center">
+            <h3 id="caption">Silahkan tekan salah satu tombol di bawah ...</h3>
+            <button class="button" id="tombol">Tombol Custom Event</button>
+        </div>
+        <script>
+            // Ini merupakan custom Event = event yg di initial sendiri dan berpotensi bug
+
+            const eventBuatan = new Event ('eventBuatanKita');
+            element.addEventListener('eventBuatanKita');
+
+            
+            const changeCaption = new Event('changeCaption');
+
+            window.addEventListener('load', function() {
+                const tombol = document.getElementById('tombol');
+                tombol.addEventListener('changeCaption', customEventHandler);
+                tombol.addEventListener('click', function(){});
+            });
+
+            // ev (event) merupakan objek yg berisi banyak informasi mengenai elemen terkait
+            function customEventHandler(ev) {
+                console.log('Event' + ev.type + 'telah dijalankan');
+                const caption = document.getElementById('caption');
+                caption.innerText = 'Anda telah membangkitkan custo event';
+            }
+        </script>
+    </body>
+</html>
