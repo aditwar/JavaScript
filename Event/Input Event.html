@@ -9,7 +9,33 @@
         <div class="contents">
             <h2 align="center">Input Event Form</h2>
             <div class="formContent">
-                <form id="formDataDiri"></form>
+                <form id="formDataDiri" autocomplete="off">
+                    <div class="form-element" id="fileIdName">
+                        <label for="inputNama">Nama Panggilan:</label>
+                        <br/>
+                        <input
+                        type="text"
+                        id="inputNama"
+                        name="nama"
+                        placeholder="Nama Panggilan Anda"
+                        maxlength="15"/>
+                        <br/>
+                        <label id="notifikasiSisaKarakter">Sisa Karakter:<span id="sisaKarakter"></span>
+                        </label>
+                    </div>
+                    <div class="form-element" id="fieldCopy">
+                        <label for="inputCopy"><i>Copy</i>Tulisan ini:</label>
+                        <br/>
+                        <input
+                        type="text"
+                        id="inputCopy"
+                        name="copy"
+                        value="Hello World!"
+                        readonly/>
+                        <br/>
+                    </div>
+                    <div class="form-element" id="fieldPaste"></div>
+                </form>
             </div>
         </div>
     </body>
