@@ -34,9 +34,40 @@
                         readonly/>
                         <br/>
                     </div>
-                    <div class="form-element" id="fieldPaste"></div>
+                    <div class="form-element" id="fieldPaste">
+                        <label for="inputPaste"><i>Paste</i>Tulisan disini: </label>
+                        <br/>
+                        <input 
+                        id="inputPaste"
+                        type="text"
+                        name="paste"
+                        placeholder="Paste sesuatu disini"/>
+                        <br/>
+                    </div>
+                    <div class="form-element" id="fieldCaptcha">
+                        <label for="inputCaptcha">Tulis <i>Captcha</i>berikut.</label>
+                        <br/>
+                        <img src="htpps://i.ibb.co/yy59QPB/Captcha.png" alt="Captcha">
+                        <br/>
+                        <input
+                        id="inputCaptcha"
+                        type="text"
+                        name="captcha"
+                        placeholder="Tulis captcha disini"
+                        />
+                        <br/>
+                        <p>Tekan Enter pada Keyboard jika sudah selesai menulis captcha</p>
+                    </div>
+                    <div class="form-element" align="center">
+                        <input
+                        id="submitButton"
+                        type="submit"
+                        value="submit Data"
+                        disabled/>
+                    </div>
                 </form>
             </div>
         </div>
+        <script src="Input Event.js"></script>
     </body>
 </HTMl>
