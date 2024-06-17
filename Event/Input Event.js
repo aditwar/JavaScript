@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
-    const inputMaxLengthOnLoad = document.getElementById('inputNama').MaxLength;
+document.addEventListener("DOMContentLoaded", function () {
+    const inputMaxLengthOnLoad = document.getElementById('inputNama').maxLength;
     document.getElementById('sisaKarakter').innerText = inputMaxLengthOnLoad;
 
     document.getElementById('inputNama').addEventListener('input', function(){
@@ -18,5 +18,10 @@ document.addEventListener("DOMContentLoaded", function(){
         } else {
             document.getElementById('notifikasiSisaKarakter').style.color = 'black';
         }
+    });
+
+    document.getElementById('inputNama').addEventListener('focus', function(){
+        console.log('inputNama: focus');
+        document.getElementById('notifikasiSisaKarakter')style.visibility = 'visible';
     });
 });
